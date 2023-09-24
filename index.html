@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information page</title>
+    <style>
+        
+           
+        .img1{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .img2{
+            margin-left: 30px;
+            margin-top: 20px;
+            margin
+        }
+        
+               table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+             }
+                 th, td {
+            border: 1px solid #271bd5;
+            padding: 10px;
+            text-align: center;
+              }
+                         th {
+            background-color: #9ca19e;
+              }
+                             td.day {
+            background-color: #c9cdcb;
+              }
+                                   body{
+            background-color: rgb(255, 255, 255);
+              }
+              td{background-color: rgb(239, 245, 245);
+                
+              }
+    
+              label {
+        display: block; /* Встановлюємо лейбли як блочні елементи */
+        margin-bottom: 10px; /* Встановлюємо відступ між лейблами */
+        font-weight: bold; /* Текст міток жирним шрифтом */
+            display: block; /* Виводимо мітки на новому рядку */
+            margin-top: 10px;
+    }
+    .right-align {
+        float: right; 
+        text-align: center;
+            margin-right: 20px; /* Відступ справа */
+    padding:0px 40px 150px 20px; /* Внутрішній відступ */
+    
+    }
+    
+    /* Стилі для форми */
+    form {
+            background-color: #f0f1f6; /* Фон форми */
+            padding: 20px;
+            border-radius: 10px; /* Закруглені кути форми */
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc; /* Рамка навколо полів вводу */
+            border-radius: 5px; /* Закруглені кути полів вводу */
+            margin-bottom: 10px;
+        }
+  
+
+        input[type="submit"] {
+            background-color: #271bd5; /* Колір кнопки */
+            color: white; /* Колір тексту на кнопці */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a0d9e; /* Колір кнопки при наведенні */
+        }
+
+        /* Стилі для блоку div */
+        .container {
+            background-color: #f0f1f6; /* Фон блоку */
+            padding: 20px;
+            border-radius: 10px; /* Закруглені кути блоку */
+            width: 70%;
+           
+            text-align: center; /* Вирівнювання тексту по центру */
+            margin-left: left; /* Вирівнювання по правому краю */
+        }
+
+        h1 {
+            font-size: 24px; /* Розмір заголовку */
+            color: #333; /* Колір тексту заголовку */
+        }
+    </style>
+</head>
+<body>
+   
+   <center><img src="https://kpi.ua/files/kpi_0.png" alt="" width="200" height="200"></center> 
+   
+    <br>
+    
+    <img class="img2"  width="1000px" height="700px" src="https://radnuk.com.ua/wp-content/uploads/2023/08/shchodo-avtentychnosti-informatsii-rozmishchenoi-shliakhom-zapovnennia-elektronnykh-form-z-okremymy-poliamy-scaled.jpg" alt="">
+   
+                      <div class= "right-align" >
+                        
+                        
+             <h1>Введіть вашу особисту інформацію</h1>
+            <br>
+        <form action="process.php" method="POST" target="_blank">
+            <!-- action: URL, на який будуть відправлені дані -->
+            <!-- method: метод HTTP-запиту (у цьому випадку, POST) -->
+            <!-- target: де відкрити відповідь на запит (в новому вікні) -->
+            
+            <label for="firstName"><b>Ім'я</b></label>
+            <input type="text" id="firstName" name="firstName" required>
+            <!-- input type="text": поле для введення тексту -->
+            <!-- id: ідентифікатор для поля -->
+            <!-- name: ім'я поля, яке буде використовуватися під час надсилання даних -->
+            
+            
+            <label for="lastName"><b>Прізвище</b></label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+    <br>
+            <label for="age"><b>Вік</b></label>
+            <input type="number" id="age" name="age" required>
+            
+    <br>
+            <label for="email"><b>Адреса електронної пошти:</b></label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- input type="email": поле для введення адреси електронної пошти -->
+    <br>
+            <label for="password"><b>Пароль:</b></label>
+            <input type="password" id="password" name="password" required>
+    <br>
+            <!-- input type="password": поле для введення паролю -->
+            
+            <input type="submit" value="Відправити" aria-label="Відправити форму">
+            <!-- input type="submit": кнопка для відправлення форми на сервер -->
+        </form>
+        
+    </div>
+    
+   <br>
+    <div> 
+
+
+        <table>
+            <tr>
+                <th class="day">День тижня</th>
+                <th class="day">Час</th>
+                <th class="day">Заняття</th>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Понеділок</td>
+                <td>08:00 - 09:30</td>
+                <td>Програмування</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>ТІМ</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>ТІК</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Вівторок</td>
+                <td>08:00 - 09:30</td>
+                <td>Іноземна мова</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>ЗВП</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>Фізкультура</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Середа</td>
+                <td>08:00 - 09:30</td>
+                <td>ТІМ</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Програмування</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>Іноземна мова</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Четвер</td>
+                <td>08:00 - 09:30</td>
+                <td>Фізкультура</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>ЗВП</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>ТІК</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">П'ятниця</td>
+                <td>08:00 - 09:30</td>
+                <td>Програмування</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Іноземна мова</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>ТІК</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="day">Субота</td>
+                <td>08:00 - 09:30</td>
+                <td>Фізкультура</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>ЗВП</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:30</td>
+                <td>ТІМ</td>
+            </tr>
+            <tr>
+                <td class="day">Неділя</td>
+                <td class="day">Вихідний</td>
+                <td class="day">Вихідний</td>
+            </tr>
+        </table>
+    </div>
+    <div margin-right: 20px;>
+        
+        <a href=https://kpi.ua/admission target="_blank">
+            <img class="img2" src= "https://kpi.ua/files/images-story/photo_2022-05-18%2009.53.08.jpeg" width="1440" height="700"alt="Опис зображення">
+        </a>
+        <img class="img1" src="https://kpi.ua/files/images-page/k-1_0.jpg" alt="Київська Політехніка" width="720" height="400">
+        <img src="https://ktpu.kpi.ua/wp-content/uploads/2016/12/89dd0d645592478b0b8933e8eb525806.jpg" alt="" height="400" width="720">
+         </div>
+</body>
+</html>
